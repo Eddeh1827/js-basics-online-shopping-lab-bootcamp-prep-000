@@ -5,6 +5,7 @@ var cart = [];
 function getCart() {
   return cart;
 }
+
 function setCart(newCart) {
   cart = newCart;
 }
@@ -15,8 +16,9 @@ function addToCart(item) {
   item_object[item] = price
   cart.push(item_object)
   console.log(item + " has been added to your cart.");
-  return cart;
+  return cart
 }
+
 function viewCart() {
   if (cart.length === 0) {
     console.log("Your shopping cart is empty.")
